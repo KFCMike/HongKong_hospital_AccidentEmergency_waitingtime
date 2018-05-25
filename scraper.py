@@ -3,7 +3,7 @@ import requests
 import json
 import scraperwiki
 from datetime import datetime
-import pytz
+#import pytz
 
 req = requests.get('http://www.ha.org.hk/aedwt/data/aedWtData.json')
 j = req.json()
