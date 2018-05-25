@@ -15,9 +15,10 @@ names[15]=names[15][0:5]
 #hkt = pytz.timezone('Asia/Hong_Kong')
 #dt = datetime.now().replace(tzinfo=hkt).date()
 dt=j['result']['hospData'][0]['hospTimeEn']
-data = {names[i]: waitime[i] for i in range(0, 18)}
 data['date'] = dt
-print(data)
+data = {names[i]: waitime[i] for i in range(0, 18)}
+
+#print(data)
 scraperwiki.sqlite.save(unique_keys=['date'], data=data)
 
 
