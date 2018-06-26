@@ -1,4 +1,4 @@
-B5import requests
+import requests
 import json
 import scraperwiki
 from datetime import datetime
